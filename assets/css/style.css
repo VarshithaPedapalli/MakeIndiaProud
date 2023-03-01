@@ -614,7 +614,7 @@ background-image: linear-gradient(#5c9f24, #e6ebe2 );
 
 .visionBox{
 width: 350px;
-height: 400px;
+height: 380px;
 background-color: #fff;
 border-radius: 5px;
 padding:20px;
@@ -707,7 +707,7 @@ transition: 0.4s all ease;
 
 @media screen and (max-width:500px){
   .visionBox{
-    height: 400px;
+    height: 350px;
     width: 300px;
   }
 } 
@@ -1213,7 +1213,7 @@ transition: 0.4s all ease;
 # Register
 --------------------------------------------------------------*/
 .registration{
-  padding: 60px 0;
+  padding: 0 60px;
   align-items: center;
   justify-content: center;
 }
@@ -1225,7 +1225,7 @@ transition: 0.4s all ease;
 .registration .registercontent{
   padding: 20px;
   width: 85%;
-  margin: aut;
+  margin: aut0;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
@@ -1291,10 +1291,12 @@ font-size: 18px;
 }
 @media (max-width:540px){
   .registration{
-    padding: 0 10px;
+    padding: 0 40px;
+    
   }
   .registercontent{
     flex-direction: column !important;
+    margin: auto;
   }
   .registercontent .leftside {
     width: 100% !important;
