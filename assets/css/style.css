@@ -1,10 +1,3 @@
-/**
-* Template Name: Groovin - v4.10.0
-* Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -614,15 +607,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color:#5c9f24;
-/* background-image: linear-gradient(#7d9468,#5c9f24 ); */
 background-image: linear-gradient(#5c9f24, #e6ebe2 );
 
 
 }
 
 .visionBox{
-width: 450px;
-height: 450px;
+width: 350px;
+height: 400px;
 background-color: #fff;
 border-radius: 5px;
 padding:20px;
@@ -634,22 +626,31 @@ box-shadow: 03px 5px rgba(0,0,0,.3);
 overflow: hidden;
 position: relative;
 z-index: 0;
+transition: 0.4s all ease;
 }
+.visionBox:hover{
+  transform: scale(1.1);
+}
+
 .visionBox img{
   width: 200px;
   height: 150px;
   margin-bottom: 20px;
 
 }
-.visionBox h3{
+/* .visionBox img{
+  animation: animte 2s linear infinite alternate;
+} */
+
+.visionBox h4{
   margin: 0;
+  font-size: 30px;
   margin-bottom: 20px;
   padding: 0;
   color: #5c9f24;
-  font-size: 3em;
 }
 .visionBox p{
-  font-size: 15px;
+  font-size: 12px;
 }
 
 @media screen and (max-width:1000px){
@@ -709,16 +710,69 @@ z-index: 0;
     height: 400px;
     width: 300px;
   }
+} 
+
+/* .vision{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
-/* @media screen and (max-width:385px){
-  .vision{
-      height:150vh;
-  }
-  .visionBox{
-    height: 400px;
-  }
+.vision .visionCard{
+  position: relative;
+  max-width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.vision .visionCard:hover{
+  height: 420px;
+}
+.vision .visionCard .visionBox{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.vision .visionCard .visionBox img{
+  max-width: 100%;
+  border-radius: 4px;
+
+}
+.vision .visionCard .visionContent{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+.vision .visionCard:hover .visionContent{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.vision .visionCard:hover .visionContent h3{
+  color: #5c9f24;
+}
+.vision .visionCard:hover .visionContent p{
+  font-size: 12px;
 } */
- 
+
 /* ---------------------================================================================-------------------------------- */
 
 .initiatives{
