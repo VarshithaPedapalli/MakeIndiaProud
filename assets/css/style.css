@@ -712,76 +712,16 @@ transition: 0.4s all ease;
   }
 } 
 
-/* .vision{
-  position: relative;
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-}
-.vision .visionCard{
-  position: relative;
-  max-width: 300px;
-  height: 420px;
-  background: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-  transition: 0.3s ease-in-out;
-}
-.vision .visionCard:hover{
-  height: 420px;
-}
-.vision .visionCard .visionBox{
-  position: relative;
-  width: 260px;
-  height: 260px;
-  top: -60px;
-  left: 20px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-.vision .visionCard .visionBox img{
-  max-width: 100%;
-  border-radius: 4px;
-
-}
-.vision .visionCard .visionContent{
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease all;
-}
-.vision .visionCard:hover .visionContent{
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
-}
-.vision .visionCard:hover .visionContent h3{
-  color: #5c9f24;
-}
-.vision .visionCard:hover .visionContent p{
-  font-size: 12px;
-} */
-
 /* ---------------------================================================================-------------------------------- */
 
 .initiatives{
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 60px;
   margin-top: 30px;
   justify-content: space-between;
   /* background-color: #121d24; */
+
 }
 .initiatives h2{
   position: relative;
@@ -790,10 +730,15 @@ transition: 0.4s all ease;
   color: #5c9f24;
   text-align: center;
 }
+.upcommingcontent{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 .initiatives .box{
   cursor: pointer;
   position: relative;
-  width: 350px;
+  width: 310px;
   padding: 20px;
   background:#fff;
   box-shadow: 0 5px 15px rgba(0,0,0,.4);
@@ -848,21 +793,40 @@ transition: 0.4s all ease;
 .initiatives .box .content .h4{
   margin-bottom: 10px;
 }
-@media screen and (max-width:900px ){
-  .initiatives .box{
-   margin-left: 30%;
-  }  
-}
-@media screen  and (max-width:540px) {
-  .initiatives .box{
-   margin-left: 15%;
-  }  
-}
+@media screen and (max-width:1024px){
+  .upcommingcontent .box{
+   width: 250px ;
+   margin: 0 25px;
+ }
+ }
+ @media screen and (max-width:900px ){
+   
+   .upcommingcontent .box{
+     width: 250px ;
+     margin: 10px 25px;
+   }
+ }
+ @media screen  and (max-width:540px) {
+   .upcommingcontent{
+     margin-left: -25px;
+   }
+   .upcommingcontent .box{
+     width: 400px ;
+   }  
+ }
+ @media screen  and (max-width:500px) {
+   .upcommingcontent{
+     margin-left: -25px;
+   }
+   .upcommingcontent .box{
+     width: 250px ;
+   }  
+ }
 
 /* ----------------------------------------------------------------------------------------------------- */
 
 .upcomming{
-  padding: 0;
+  padding: 0 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -875,10 +839,15 @@ transition: 0.4s all ease;
   color: #5c9f24;
   text-align: center;
 }
+.upcommingcontent{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 .upcomming .box{
   cursor: pointer;
   position: relative;
-  width: 350px;
+  width: 310px;
   padding: 20px;
   background:#5c9f24;
   box-shadow: 0 5px 15px rgba(0,0,0,.7);
@@ -930,14 +899,44 @@ transition: 0.4s all ease;
 .upcomming .box:hover .content{
   color: #5c9f24;
 }
-@media screen and (width:768px ){
-  .upcomming .box{
-   margin-left: 30%;
+@media screen and (max-width:1024px){
+ .upcommingcontent .box{
+  width: 250px ;
+  margin: 15px 25px;
+}
+}
+@media screen and (max-width:1000px){
+  .upcommingcontent .box{
+   width: 250px ;
+   margin: 15px 25px;
+ }
+ .upcommingcontent{
+  margin-left: 90px;
+}
+ }
+@media screen and (max-width:768px ){
+  .upcommingcontent{
+    margin-left: 40px;
+  }
+  .upcommingcontent .box{
+    width: 250px ;
+    margin: 10px 25px;
+  }
+}
+@media screen  and (max-width:540px) {
+  .upcommingcontent{
+    margin-left: -25px;
+  }
+  .upcommingcontent .box{
+    width: 400px ;
   }  
 }
-@media screen  and (width:540px) {
-  .upcomming .box{
-   margin-left: 15%;
+@media screen  and (max-width:500px) {
+  .upcommingcontent{
+    margin-left: -25px;
+  }
+  .upcommingcontent .box{
+    width: 250px ;
   }  
 }
 /*--------------------------------------------------------------
@@ -1226,7 +1225,7 @@ transition: 0.4s all ease;
 .registration .registercontent{
   padding: 20px;
   width: 85%;
-  margin: auto;
+  margin: aut;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
@@ -1344,7 +1343,7 @@ font-size: 18px;
 
 .contact iframe {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   height: 100%;
 }
@@ -1367,7 +1366,9 @@ font-size: 18px;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+
 }
 
 #footer .footer-top .footer-info img {
@@ -1403,7 +1404,7 @@ font-size: 18px;
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ff4a17;
+  background: #5c9f24;
   color: #fff;
   text-decoration: none;
 }
@@ -1418,6 +1419,8 @@ font-size: 18px;
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  align-items: center;
+  text-align: left;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1451,49 +1454,16 @@ font-size: 18px;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ff4a17;
-}
-
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-}
-
-#footer .footer-top .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #ff4a17;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ff5e31;
+  color: #5c9f24;
 }
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 #footer .credits {
-  padding-top: 10px;
+  padding-top: 0;
   text-align: center;
   font-size: 13px;
   color: #fff;
