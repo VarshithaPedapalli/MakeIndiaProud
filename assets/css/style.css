@@ -1225,7 +1225,7 @@ transition: 0.4s all ease;
 .registration .registercontent{
   padding: 20px;
   width: 85%;
-  margin: aut0;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
