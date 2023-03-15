@@ -36,7 +36,7 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
 
 
   </head>
@@ -53,9 +53,9 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Projects</a></li>
+            <li><a class="nav-link scrollto" href="./php/project.php">Projects</a></li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
             <li>
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
@@ -666,30 +666,45 @@
       <!-- End Portfolio Section -->
 
        <!-- Registration Section -->
-      <section class="registration" id="registration">
+      <section class="registration"  id="registration">
         <h2>REGISTER HERE</h2>
         <div class="registercontent">
           <div class="leftside">
             <img src="./assets/img/register2.svg" alt="">
           </div>
           <div class="rightside">
-          <form action="">
+          <form class="form" action="./php/register.php"  method="post">
+            <div class="error"  style="color: #af4242;
+            background-color: #fde8ec;
+            padding: 10px;
+            transform: translateY(-20px);
+            margin-bottom: 20px;
+            font-size: 18px;
+            display: none;
+            margin-top: 20px;" ></div>
             
-            <input type="text" name="" placeholder="Name" id="">
-            <input type="email" name="" placeholder=" Email" id="">
-            <input type="number" name="" placeholder="Phone number" id="">
-            <input type="text" name="" placeholder="College" id="">
-            <select name="" id="">
-              <option value="Select a option">Select a option</option>
-              <option value="U.G">U.G</option>
-              <option value="P.G">P.G</option>
+            <input type="text" name="username" placeholder="Name" id="">
+
+            <input type="email" name="email" placeholder=" Email" id="">
+
+            <input type="number" name="contact" placeholder="Phone number" id="">
+
+            <input type="text" name="college" placeholder="College" id="">
+
+            <select name="category" id="">
+              <option value="O">Select a option</option>
+              <option value="U">U.G</option>
+              <option value="P">P.G</option>
             </select>
-            <textarea name="" id="" cols="30" rows="4" placeholder="Write your thoughts..."></textarea>
-            <button type="sub">Submit</button>
+
+            <textarea name="feedback" id="" cols="30" rows="4" placeholder="Write your thoughts..."></textarea>
+
+            <button name="submit" type="submit">Submit</button>
           </form>
 
         </div></div>
       </section>
+      <script src="./js/register.js"></script>
 
       <!-- ======= /Registration Section ======= -->
 
