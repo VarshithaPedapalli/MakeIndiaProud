@@ -1,4 +1,16 @@
 <?php include "db_conn.php"; ?>
+<?php 
+session_start();
+
+$userprofile = $_SESSION['email'] ;
+if( $userprofile == true){
+
+}
+else{
+  header('location:login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -91,7 +103,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="../index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="./php/project.php">Projects</a></li>
+          <li><a class="nav-link scrollto" href="project.php">Projects</a></li>
           <li><a class="nav-link scrollto" href="../index.html#team">Team</a></li>
           <li>
             <a class="nav-link scrollto" href="../index.html#portfolio">Portfolio</a>
@@ -118,6 +130,7 @@
            <?php if (isset($_GET['error'])): ?>
 		<p><?php echo $_GET['error']; ?></p>
 	<?php endif ?>
+
 
            <h2>Craete Project</h2>
            <input class="galleryinput" type="text" placeholder="Title"

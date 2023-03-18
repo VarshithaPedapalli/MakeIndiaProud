@@ -108,6 +108,7 @@ session_start();
     else{
       // echo "Connected Successfully!!!";
     }
+
     $image = mysqli_query($conn, "SELECT * FROM `image` ORDER BY id DESC");
     // $image = mysqli_query($conn, "SELECT * FROM `image`");
 

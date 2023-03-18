@@ -71,7 +71,7 @@ session_start();
 
             <li><a class="nav-link scrollto" href="../index.html#contact">Contact</a></li>
 
-            <?php if(isset($_SESSION['email'])) : ?>
+            <?php if(!isset($_SESSION['email'])) : ?>
             <li>
               <a class="getstarted scrollto" href="./index.php/#registration">Register</a>       </li>    
                    <li><a class="getstarted scrollto" href="./login.php">Login</a></li>
@@ -101,7 +101,13 @@ session_start();
   // if(!$conn){
   //   die("connection failed!!".mysqli_connect_error());
   // }
+  $userprofile = $_SESSION['email'] ;
+  if( $userprofile == true){
 
+  }
+  else{
+    header('location:login.php');
+  }
   // $image = mysqli_query($conn, "SELECT * FROM `image` ORDER BY id='$id'");
   $image = mysqli_query($conn, "SELECT * FROM `image` WHERE id='$id'");
 

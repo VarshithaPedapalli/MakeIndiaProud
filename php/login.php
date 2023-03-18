@@ -101,7 +101,8 @@ if(isset($_POST['submit'])) {
       $login = true;
       session_start();
       echo "logged in";
-      $_SESSION['email'] = $data['email'];
+      // $_SESSION['email'] = $data['email'];
+      $_SESSION['email'] = $email;
       header("location: project.php");
       } 
       else {
