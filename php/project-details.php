@@ -101,13 +101,7 @@ session_start();
   // if(!$conn){
   //   die("connection failed!!".mysqli_connect_error());
   // }
-  $userprofile = $_SESSION['email'] ;
-  if( $userprofile == true){
 
-  }
-  else{
-    header('location:login.php');
-  }
   // $image = mysqli_query($conn, "SELECT * FROM `image` ORDER BY id='$id'");
   $image = mysqli_query($conn, "SELECT * FROM `image` WHERE id='$id'");
 
